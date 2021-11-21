@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>mparker42</Authors>
+		<Description>Simple common abstraction layer for Etherium requests that are part of the simple tokens Devember 2021 project.</Description>
+		<PackageProjectUrl>https://github.com/mparker42/MP.DocumentDB</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mparker42/MP.DocumentDB</RepositoryUrl>
+		<PackageLicenseExpression>MIT-0</PackageLicenseExpression>
+		<Copyright>Martin Parker</Copyright>
+		<Version>1.0.1</Version>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+		<PackageReference Include="MP.SimpleTokens.Common.Models" Version="1.0.5" />
+		<PackageReference Include="Nethereum.ABI" Version="4.1.1" />
+		<PackageReference Include="Nethereum.StandardNonFungibleTokenERC721" Version="4.1.1" />
+		<PackageReference Include="Nethereum.Web3" Version="4.1.1" />
+	</ItemGroup>
+
+</Project>
